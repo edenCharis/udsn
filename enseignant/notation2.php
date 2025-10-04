@@ -316,8 +316,8 @@ if( $_SESSION['id'] == session_id() and  $_SESSION['role']=="enseignant"){
                                                         $resultat=$connexion->query($sql);
                                                         while($etablissement =$resultat->fetch_assoc()){
                                                 ?>
-                                                 <option value="<?php echo $etablissement["code_ecue"];?>"><?php echo str_replace("+","'",$etablissement['libelle'])></option>
-                                                 <?php }?>
+                                                 <option value="<?php echo $etablissement["code_ecue"];?>"><?php echo str_replace("+","'",$etablissement['libelle']) ?> </option>
+                                                <?php }?>
                                             </select>
                     </div>
                     <div class="input-group mb-3">
